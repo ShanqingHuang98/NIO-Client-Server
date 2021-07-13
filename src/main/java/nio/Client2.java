@@ -7,7 +7,7 @@ import java.io.InputStreamReader;
 import java.io.PrintStream;
 import java.net.Socket;
 
-public class Client {
+public class Client2 {
 
     public static void main(String[] args) throws IOException {
         // 创建两个socket，想让它们先后与server连接
@@ -19,8 +19,8 @@ public class Client {
         // in和out好像都是socket的ip和端口
         out = new PrintStream(socket.getOutputStream());
         in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
-        String uname = "黄山青";
-        String upass = "1998huang";
+        String uname = "123";
+        String upass = "321";
         User user = new User(uname, upass);
 
         while (true) {
